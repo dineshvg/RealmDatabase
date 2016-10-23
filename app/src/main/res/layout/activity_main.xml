@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mail.dinesh.realmtest.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/textview_threadId"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/label_threadId"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="ThreadID"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/editText_threadId"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.33"
+            android:layout_height="fill_parent"
+            android:textAlignment="center"
+            android:hint="Enter Thread ID"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_commitData"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Commit to Realm"/>
+    <LinearLayout
+        android:id="@+id/textview_threadRealm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/label_threadRealmId"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="RealmID"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/label_threadRealm"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="RealmValue"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>
