@@ -4,6 +4,9 @@ import android.util.Log;
 
 import com.mail.dinesh.realmtest.bo.LocalMail;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
 import io.realm.RealmObject;
@@ -31,11 +34,34 @@ public class DbCommit {
 
     protected static LocalMail pullData(Realm realm) {
         RealmResults<LocalMail> results = realm.where(LocalMail.class).findAll();
-        for(LocalMail c:results) {
+        /*for(LocalMail c:results) {
             Log.d("Data from realm", c.getThreadId());
-        }
+        }*/
         LocalMail latestResult = results.last();
         return latestResult;
+    }
+
+    protected static void deleteData(Realm realm, String threadId) {
+        RealmResults<LocalMail> results = realm.where(LocalMail.class).findAll();
+        LocalMail mail = results .where().equalTo("threadId",threadId).findFirst();
+        if(mail!=null) {
+            if (!realm.isInTransaction())
+            {
+                realm.beginTransaction();
+            }
+            mail.removeFromRealm();
+            realm.commitTransaction();
+        }
+    }
+
+    protected static List<String> pullAllData(Realm realm) {
+        List<String> dbSpit = new ArrayList<>();
+        RealmResults<LocalMail> results = realm.where(LocalMail.class).findAll();
+        for(LocalMail c:results) {
+            Log.d("Data from realm", c.getThreadId());
+            dbSpit.add(c.getThreadId());
+        }
+        return dbSpit;
     }
 
     //Primary key implementation

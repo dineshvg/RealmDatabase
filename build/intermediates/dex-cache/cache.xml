@@ -3,24 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/home/dinesh/.gradle/caches/modules-2/files-2.1/io.realm/realm-android/0.84.1/b86074e6240f0f876701810a047b0261f7bd060e/realm-android-0.84.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="b86074e6240f0f876701810a047b0261f7bd060e">
-        <dex dex="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/realm-android-0.84.1_c5f6f5b8cd51fe2b48bb260f48c608ab8edc1901/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="952d35fb9be13e52ff887ced7dfa8ed1b2dbfa47">
-        <dex dex="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_948c0abd08fe8b56728d1884ce6ffa896966c460/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -34,8 +16,35 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="5a42cec0d1755cc06c1258b31a79932e1e7475ca">
+        sha1="6b0938ee79eb408e67bd8f6f0bb4d6ba9b1f8d5a">
         <dex dex="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_af3023267ae3698b5e457f802d88a02d145e468b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_eba992cdb578157f960ad120d8bdcc11161614d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dinesh/.gradle/caches/modules-2/files-2.1/io.realm/realm-android/0.84.1/b86074e6240f0f876701810a047b0261f7bd060e/realm-android-0.84.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b86074e6240f0f876701810a047b0261f7bd060e">
+        <dex dex="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/realm-android-0.84.1_c5f6f5b8cd51fe2b48bb260f48c608ab8edc1901/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6bc5b5768c800ee56586db4ffb957d1e33b46e36">
+        <dex dex="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_948c0abd08fe8b56728d1884ce6ffa896966c460/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -63,15 +72,6 @@
         revision="23.0.3"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
         <dex dex="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_e667d733bd11c5952e8e57e6d4ab4a8188c6bdb2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/home/dinesh/AndroidStudioProjects/RealmTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_eba992cdb578157f960ad120d8bdcc11161614d0/classes.dex" />
     </item>
     <item
         is-multidex="true"

@@ -7,6 +7,10 @@
     android:orientation="vertical"
     tools:context="com.mail.dinesh.realmtest.MainActivity">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3.5dp"
+        android:background="@color/colorPrimaryDark"/>
     <LinearLayout
         android:id="@+id/textview_threadId"
         android:layout_width="match_parent"
@@ -20,23 +24,36 @@
             android:layout_gravity="center"
             android:textAlignment="center"
             android:text="ThreadID"
-            android:textColor="@android:color/black"
+            android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
+        <View
+            android:layout_width="3.5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:background="@color/colorPrimaryDark"/>
         <EditText
             android:id="@+id/editText_threadId"
             android:layout_width="wrap_content"
-            android:layout_weight="0.33"
+            android:layout_weight="0.49"
             android:layout_height="fill_parent"
             android:textAlignment="center"
             android:hint="Enter Thread ID"
-            android:textColor="@android:color/black"
+            android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3.5dp"
+        android:background="@color/colorPrimaryDark"/>
     <Button
         android:id="@+id/button_commitData"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Commit to Realm"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3.5dp"
+        android:background="@color/colorPrimaryDark"/>
     <LinearLayout
         android:id="@+id/textview_threadRealm"
         android:layout_width="match_parent"
@@ -52,15 +69,66 @@
             android:text="RealmID"
             android:textColor="@android:color/black"
             android:textSize="20sp"/>
+        <View
+            android:layout_width="3.5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:background="@color/colorPrimaryDark"/>
         <TextView
             android:id="@+id/label_threadRealm"
             android:layout_width="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_weight="0.49"
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:textAlignment="center"
             android:text="RealmValue"
             android:textColor="@android:color/black"
             android:textSize="20sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3.5dp"
+        android:background="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editText_threadId_for_delete"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="fill_parent"
+            android:textAlignment="center"
+            android:hint="Enter Thread ID"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/button_deleteData"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.49"
+            android:text="Delete from Realm"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3.5dp"
+        android:background="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:id="@+id/all_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/allInfo_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="Data"/>
     </LinearLayout>
 </LinearLayout>
